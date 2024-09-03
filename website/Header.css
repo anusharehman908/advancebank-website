@@ -1,0 +1,177 @@
+/* 
+.header {
+ position: fixed;  
+    margin-top: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2ebeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.slider-image {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 50%; 
+}
+
+.text-section h1 {
+    margin: 0;
+    font-size: 4rem; 
+    color: #3e3a3a;
+}
+
+.text-section p {
+    margin: 0;
+    font-size: 1.6rem; 
+    color: #666; 
+}
+.text-section button{
+    margin-top: 20px;
+    color:black;
+    background-color: rgb(179, 255, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.slider-section {
+    flex: 1;
+    max-width: 50%; 
+}
+
+
+
+.slick-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-section, .slider-section {
+        max-width: 100%;
+    }
+    
+    .text-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-section p {
+        font-size: 0.875rem; 
+    }
+}
+
+ */
+
+
+
+
+ .header {
+    margin-top: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2ebeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-section h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: #3e3a3a;
+}
+
+.text-section p {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.text-section button {
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(179, 255, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.slider-section {
+    flex: 1;
+    max-width: 50%;
+}
+
+.slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center; /* Center items in mobile view */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .text-section, .slider-section {
+        max-width: 100%;
+        width: 100%; /* Ensure sections take full width on mobile */
+    }
+    
+    .text-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-section p {
+        font-size: 0.875rem;
+    }
+
+    .slider-image {
+        width: 100%;
+    }
+}

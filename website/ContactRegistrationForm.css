@@ -1,0 +1,95 @@
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-toggle {
+    padding: 10px 20px;
+    border: none;
+    background-color: #77ff00;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .form-toggle.active {
+    background-color: #6cff09;
+  }
+  
+  .form-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input, .form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form button {
+    padding: 10px;
+    background-color: #00ff44;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #71b300;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 10px;
+    }
+  
+    .form-toggle {
+      font-size: 0.9rem;
+    }
+  
+    .form h2 {
+      font-size: 1.25rem;
+    }
+  
+    .form input, .form textarea {
+      font-size: 0.9rem;
+    }
+  
+    .form button {
+      font-size: 0.9rem;
+    }
+  }
+  

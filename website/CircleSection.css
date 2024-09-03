@@ -1,0 +1,56 @@
+/* CircleSection.css */
+
+.circle-section {
+    margin-top: 20px;
+    background-color: #9adc16; /* Green background */
+    padding: 90px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 90px;
+}
+
+.circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.circle-image {
+    width: 100px;
+    height: 70px;
+    border-radius: 40%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.circle-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .circle {
+        width: 170px;
+        height: 120px;
+    }
+
+    .circle-image {
+        width: 80px;
+        height: 60px;
+    }
+
+    .circle-text {
+        font-size: 0.875rem;
+    }
+}

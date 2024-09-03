@@ -1,0 +1,104 @@
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: nowrap;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-toggle {
+    background-color: #444;
+    color: rgb(147, 231, 12);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: rgb(92, 232, 5);
+    text-decoration: none;
+    padding: 20px 15px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #fefffe;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    .nav-center {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        max-height: 0; /* Menu is hidden by default */
+    }
+
+    .nav-center.show {
+        max-height: 500px; /* Show menu when toggled */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

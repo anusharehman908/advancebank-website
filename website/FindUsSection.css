@@ -1,0 +1,122 @@
+/* FindUsSection.css */
+
+.find-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.find-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.find-us-image {
+    width: 200px;
+    height: auto;
+}
+
+.find-us-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.find-us-info h2 {
+    color: #68a123;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.find-us-info p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.find-us-button {
+    background-color: #68a123;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.find-us-button:hover {
+    background-color: #558d1a;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 250px;
+    max-width: 100%;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #68a123;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-button:hover {
+    background-color: #558d1a;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .find-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .find-us-image {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+
+    .find-us-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
